@@ -1,0 +1,17 @@
+{
+  "name": "libreoffice",
+  "version": "1.0.0",
+  "description": "Document to PDF converter with libreoffice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "https://elitewebmaster.com",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.224.1",
+    "child_process": "^1.0.2",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
