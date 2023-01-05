@@ -6,10 +6,10 @@ unpackArchive();
 
 module.exports.handler = (event, context, cb) => {
   const filepath = event.filepath;
-  let fileextension = event.fileextension;
+  let fileextension;
   
-  if(typeof fileextension !== undefined && fileextension !== "undefined" && fileextension !== null){
-    fileextension = fileextension.toLowerCase();
+  if(event.fileextension){
+    fileextension = event.fileextension.toLowerCase();
   } else {
     fileextension = "pdf";
   }
